@@ -1,0 +1,29 @@
+.type {
+    left: 100px;
+    position: absolute;
+    
+    margin-left: 500px;
+    right:16px;
+    border-radius: 30px;
+    height:33px;
+    width:30%;
+    background-color: white; 
+    
+}
+  
+
+.btn{
+    position: absolute;
+    left: 905px;
+    height:37px;
+    border-radius: 15px;
+   
+}
+
+
+.search {
+    position: relative;
+    width: 1000px;
+    height: 30px;
+}
+

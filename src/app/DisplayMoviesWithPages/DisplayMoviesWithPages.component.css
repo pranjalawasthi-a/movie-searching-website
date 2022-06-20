@@ -1,0 +1,76 @@
+
+.btn{
+    position:relative;
+    height:30px;
+    border-radius: 15px; 
+    text-align: center;
+    padding: 2rem; 
+}
+
+.btncolr{
+    background-color: #E63E6D;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: white;
+    
+}
+
+.btncolr:hover {
+    color: #E63E6D;
+    transform: scale(1.705);
+    text-decoration: underline;
+}
+
+.btn:hover {
+    color: #E63E6D;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.printing{
+    color: white;    
+}
+
+.printing:hover {
+    color: #E63E6D;
+  }
+
+.display{
+    width: 200px;
+    border: 4px outset  #E63E6D;;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.display:hover {
+    color: #E63E6D;
+    opacity: 0.2;
+    transform: scale(1.05);
+  }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.displaymovies{
+    text-align: center;
+    padding: 2rem;
+    margin:auto;
+    width: 80%;
+    height: 100%; 
+    object-fit: contain;
+}
+
+.check-css{
+    width: 15px;
+    height: 15px;
+}
+
+.check-value{
+    position:relative;
+    
+    top:1px;
+    color:white;
+}

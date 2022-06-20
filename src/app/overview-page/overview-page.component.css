@@ -1,0 +1,7 @@
+.print{
+    color: white;
+}
+
+.print:hover {
+    color: #E63E6D;
+  }

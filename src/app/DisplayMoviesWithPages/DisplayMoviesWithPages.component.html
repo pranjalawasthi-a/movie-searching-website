@@ -1,0 +1,34 @@
+
+ <app-searchresult></app-searchresult>
+
+ <br>
+ <!-- <input class="check-css" type="checkbox" (onChange)=altermovies(movies,isChecked)  [(ngModel)]="isChecked"> -->
+
+ <input class="check-css" type="checkbox"   [(ngModel)]="isChecked">
+ 
+ <label class="check-value" > Filter for last 10 years</label>
+ 
+ <div class="wrapper">
+
+
+  <ng-container *ngFor="let list of movies"  >
+     <div  *ngIf="!isChecked || isChecked && checkyear(list.year)" class ="displaymovies">
+
+      <div class="display"    style="cursor:'pointer'"  (click)= GoForRouting(list.imdbId)>   
+            <img  id="postermovie" [src]="list.poster!== 'N/A' ? list.poster : 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design-.jpg?fj=1' " width="200" height="200">
+            <p class="printing">{{list.title}} </p>
+      </div>
+    </div>  
+  </ng-container>
+      
+
+</div>
+
+<div class="btn">
+    <button class ="btncolr" *ngFor="let page of pageArr;" style="display: inline-block"  (click)="sendingmoviename(page)">
+        {{ page}}
+    </button>
+</div>
+
+
+
