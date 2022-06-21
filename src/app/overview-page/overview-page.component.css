@@ -1,11 +1,17 @@
 .print{
     color: white;
+    font-size: large;
 }
+
 
 .print:hover {
     color: #E63E6D;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
+   
+    .main img{
+        width:200px;
+    }
     
   }
