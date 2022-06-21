@@ -5,3 +5,7 @@
 .print:hover {
     color: #E63E6D;
   }
+
+  @media only screen and (max-width: 600px) {
+    
+  }

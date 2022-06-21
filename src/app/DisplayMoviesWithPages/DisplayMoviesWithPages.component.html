@@ -14,7 +14,7 @@
   <ng-container *ngFor="let list of movies"  >
      <div  *ngIf="!isChecked || isChecked && checkyear(list.year)" class ="displaymovies">
 
-      <div class="display"    style="cursor:'pointer'"  (click)= GoForRouting(list.imdbId)>   
+      <div class="display" style="cursor:'pointer'"  (click)= GoForRouting(list.imdbId)>   
             <img  id="postermovie" [src]="list.poster!== 'N/A' ? list.poster : 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design-.jpg?fj=1' " width="200" height="200">
             <p class="printing">{{list.title}} </p>
       </div>
